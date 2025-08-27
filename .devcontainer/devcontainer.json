@@ -1,0 +1,28 @@
+{
+  "name": "study",
+  "build": { "dockerfile": "Dockerfile", "context": ".." },
+  "onCreateCommand": "bash .devcontainer/setup/onCreate.sh",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-toolsai.jupyter",
+        "ms-python.python",
+        "continue.continue"
+      ],
+      "settings": {
+        "workbench.startupEditor": "none",
+        "window.restoreWindows": "none",
+        "workbench.editor.restoreViewState": false,
+        "jupyter.askForKernelRestart": false,
+        "jupyter.showJupyterExtensionStartupBanner": false,
+        "python.defaultInterpreterPath": "/opt/venv/bin/python",
+        "python.terminal.activateEnvironment": true,
+        "jupyter.jupyterServerType": "local"
+      }
+    }
+  },
+  "features": {},
+  "remoteUser": "vscode"
+}
+
+

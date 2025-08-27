@@ -1,0 +1,9 @@
+.ready
+.study-subject
+**/.ipynb_checkpoints/
+**/__pycache__/
+data/*
+!data/.gitkeep
+ 
+
+
